@@ -123,7 +123,7 @@ router.get("/dashboard", authenticateToken, (req, res) => {
 router.post("/refresh-token", async (req, res) => {
   const { refreshToken } = req.cookies || {};
   if (!refreshToken)
-    return res.status(401).sned({ msg: "No refresh token provided" });
+    return res.status(401).send({ msg: "No refresh token provided" });
 
   try {
     const oldPayload = jwt.verify(refreshToken, process.env.JWT_REFRESH_SECRET);
