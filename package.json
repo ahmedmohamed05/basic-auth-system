@@ -1,0 +1,21 @@
+{
+	"name": "auth-system",
+	"version": "1.0.0",
+	"description": "",
+	"main": "auth.js",
+	"type": "module",
+	"scripts": {
+		"dev": "node --env-file=.env --watch server.js",
+		"start": "node server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"cookie-parser": "^1.4.7",
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2",
+		"mysql2": "^3.15.3"
+	}
+}
